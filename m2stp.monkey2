@@ -1,14 +1,15 @@
-'Simple Text Formatting
-'By @Hezkore 2018
+' Monkey2 Simple text processing
+' By @Hezkore 2018
+' https://github.com/Hezkore/m2stp
 
-Namespace stf
+Namespace stp
 
 #Import "<std>"
 Using std..
 
 #Import "inc/base_functions"
 
-Class StfString
+Class StpString
 	'Symbols all have a max length of 1
 	Field _escSymbol:String="'"
 	Field _conLeftSymbol:String="["
@@ -322,13 +323,13 @@ Class StfString
 	
 	Method LoadBase()
 		'Functions
-		AddFunc( "add", New StfAdd )
-		AddFunc( "sub", New StfSub )
-		AddFunc( "div", New StfDiv )
-		AddFunc( "mul", New StfMul )
+		AddFunc( "add", New StpAdd )
+		AddFunc( "sub", New StpSub )
+		AddFunc( "div", New StpDiv )
+		AddFunc( "mul", New StpMul )
 		
 		'Variables
-		SetVar( "stf_version", "1" )
+		SetVar( "stp_version", "1" )
 	End
 	
 	Class Func Abstract

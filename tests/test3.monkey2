@@ -1,15 +1,15 @@
-#Import "../stf"
-Using stf..
+#Import "../stp"
+Using stp..
 
 Function Main()
 	
-	'Create a new simple text format object
+	'Create a new simple text processing object
 	'But do not load any of the 'base' functions or variables
-	Local formatText:=New StfString( False )
+	Local formatText:=New StpString( False )
 	
-	'%stf_version% and $add etc. will no longer work
+	'%stp_version% and $add etc. will no longer work
 	'They are part of the 'base' functions and variables
-	Print formatText.Format( "Version is=%stf_version%" )
+	Print formatText.Format( "Version is=%stp_version%" )
 	Print formatText.Format( "What is 1+1=$add(1,1)" )
 	
 	'But we can add our own variables!
@@ -23,7 +23,7 @@ Function Main()
 	'You can add/set/overwrite variables and functions even if 'base' is loaded
 End
 
-Class MyAddFunction Extends StfString.Func
+Class MyAddFunction Extends StpString.Func
 	
 	Method OnCall:String( param:Stack<String> ) Override
 		

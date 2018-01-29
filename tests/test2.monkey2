@@ -1,12 +1,12 @@
-#Import "../stf"
-Using stf..
+#Import "../stp"
+Using stp..
 
 #Import "assets/version.txt"
 
 Function Main()
 	
-	'Create a new simple text format object
-	Local formatText:=New StfString
+	'Create a new simple text processing object
+	Local formatText:=New StpString
 	
 	'Exactly the same as example1 but via external file
 	Print formatText.Format( LoadString("asset::version.txt") )

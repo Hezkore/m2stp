@@ -1,2 +1,0 @@
-STF version is v%stf_version%
-Next version will be v$add(%stf_version%,1)

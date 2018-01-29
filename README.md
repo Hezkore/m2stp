@@ -1,2 +1,2 @@
-# stf.git
+# stp.git
 Automatically generated README.md
