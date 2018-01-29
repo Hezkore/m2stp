@@ -1,9 +1,9 @@
-Namespace stf
+Namespace m2stp
 
 'Base functions
 
 'Adds
-Class StfAdd Extends StfString.Func
+Class StpAdd Extends StpString.Func
 	
 	Method OnCall:String( param:Stack<String> ) Override
 		If param.Length<=0 Then Return Null
@@ -18,7 +18,7 @@ Class StfAdd Extends StfString.Func
 End
 
 'Subtracts
-Class StfSub Extends StfString.Func
+Class StpSub Extends StpString.Func
 	
 	Method OnCall:String( param:Stack<String> ) Override
 		If param.Length<=0 Then Return Null
@@ -33,7 +33,7 @@ Class StfSub Extends StfString.Func
 End
 
 'Divides
-Class StfDiv Extends StfString.Func
+Class StpDiv Extends StpString.Func
 	
 	Method OnCall:String( param:Stack<String> ) Override
 		If param.Length<=0 Then Return Null
@@ -48,7 +48,7 @@ Class StfDiv Extends StfString.Func
 End
 
 'Multiplies
-Class StfMul Extends StfString.Func
+Class StpMul Extends StpString.Func
 	
 	Method OnCall:String( param:Stack<String> ) Override
 		If param.Length<=0 Then Return Null

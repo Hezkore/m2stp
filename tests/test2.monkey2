@@ -1,5 +1,5 @@
-#Import "../stp"
-Using stp..
+#Import "../m2stp"
+Using m2stp..
 
 #Import "assets/version.txt"
 

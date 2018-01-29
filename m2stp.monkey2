@@ -2,7 +2,7 @@
 ' By @Hezkore 2018
 ' https://github.com/Hezkore/m2stp
 
-Namespace stp
+Namespace m2stp
 
 #Import "<std>"
 Using std..
@@ -314,7 +314,14 @@ Class StpString
 	
 	Method SetVar( name:String, v:String )
 		'Print "Setting variable ~q"+name+"~q to ~q"+v+"~q"
-		If name Then _vars.Add( name.ToLower(), v )
+		name=name.ToLower()
+		If name Then
+			If _vars.Contains( name ) Then
+				_vars.Update( name, v )
+			Else
+				_vars.Add( name, v )
+			Endif
+		Endif
 	End
 	
 	Method To:String()
