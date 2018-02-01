@@ -1,7 +1,7 @@
 # m2stp.git
 Process strings in real time with Monkey2
 
-![](http://hezkore.com/captures/Test4_642x512_u1517246449.png)
+![](https://github.com/Hezkore/m2stp/blob/master/tests/demo.png)
 
 ## Usage
 * Navigate to 'tests' in your 'm2stp' folder
