@@ -1,8 +1,9 @@
 # m2stp.git
-Process strings in real time with Monkey2
+A text processing module for Monkey2.
 
 ![](https://github.com/Hezkore/m2stp/blob/master/tests/demo.png)
 
-## Usage
-* Navigate to 'tests' in your 'm2stp' folder
-* Compile and run any of the tests
+## Instructions
+* Download or Git Clone to your Monkey2 ‘Modules’ folder
+* Recompile module
+* Compile & run tests inside the ‘tests’ folder
